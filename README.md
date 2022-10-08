@@ -3,7 +3,7 @@
 <h3>
 Construct Week Project Masai School
 </h3>
-<a href="https://sensitive-thunder-3176.vercel.app/">Live link</a>
+<a href="https://clone-of-timecamp.vercel.app/">Live link</a>
 
 <h2>Description</h2>
 <p>
