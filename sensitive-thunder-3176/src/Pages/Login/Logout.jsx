@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/Sign/Logout.css";
+import "../../Styles/Login/Logout.css";
 import { Button } from "@chakra-ui/react";
 import { Getlogout } from "../../Redux/AuthReducer/Action";
 import { useDispatch, useSelector } from "react-redux";

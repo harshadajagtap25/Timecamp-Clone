@@ -5,7 +5,6 @@ const intial = {
   token: getLocalData("token") || undefined,
   isLoading: false,
   isError: false,
-  
 };
 
 export const reducer = (state = intial, action) => {
