@@ -12,7 +12,6 @@ TimeCamp is a web-based application launched in 2009 by Kamil Rudnicki, a progra
 <hr/>
 <h2>Team Members</h2>
 
-
 <li>
 <a href="https://www.linkedin.com/in/mohammad-zaki-b48821158/">Mohammad Zaki</a>
 </li>
@@ -25,7 +24,6 @@ TimeCamp is a web-based application launched in 2009 by Kamil Rudnicki, a progra
 <li>
 <a href="https://www.linkedin.com/in/rajendra-nali-760762170/">Rajendera Nali</a>
 </li>
-
 
 <hr/>
 <h2>Tech Stack</h2>
@@ -47,8 +45,6 @@ TimeCamp is a web-based application launched in 2009 by Kamil Rudnicki, a progra
 <li>Users</li>
 <li>Computer Time Usage</li>
 <li>Reporting Status</li>
-
-
 
 <hr/>
 <h3>Home Page</h3>
@@ -73,9 +69,10 @@ One of the characteristics of TimeCamp is automation of the processes connected 
 ![image](https://user-images.githubusercontent.com/94439105/187070740-86cff3a0-47be-476d-a1c1-ffb61758a5cc.png)
 
 <hr/>
-<h3>Pricing Page</h3> 
+<h3>Pricing Page</h3>
 
 ![image](https://user-images.githubusercontent.com/94439105/187070784-90b3f5ee-1f47-45ba-9f04-63209b0199a3.png)
+
 <p>User can choose package according to their choice</p>
 
 <hr/>

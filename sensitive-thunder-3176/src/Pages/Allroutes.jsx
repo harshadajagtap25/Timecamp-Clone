@@ -1,15 +1,9 @@
 import React from "react";
-
 import { Route, Routes } from "react-router-dom";
-
 import Blog from "./Blog";
 import Bookdemo from "./Bookdemo";
-
-
 import FinalHome from "./Home/FinalHome";
-
-import Signin from "./Signin/Signin";
-
+import Login from "./Login/Login";
 import TimeSide from "./TimeSheet/TimeSide";
 import TimeSheet from "./TimeSheet/TimeSheet";
 import Dashboard from "./TimeSheet/Dashboard";
@@ -22,12 +16,11 @@ import Attendance from "./TimeSheet/Attendance";
 import Approvals from "./TimeSheet/Approvals";
 import Clients from "./TimeSheet/Clients";
 import Invoices from "./TimeSheet/Invoices";
-
 import Finalinte from "./Integration/Finalinte";
 import FinalFeature from "./Feature/FinalFeature";
 import Finalprice from "./Pricing/Finalprice";
-import AuthReq from "./Signin/AuthReq";
-import Logout from "./Signin/Logout";
+import AuthReq from "./Login/AuthReq";
+import Logout from "./Login/Logout";
 
 const Allroutes = () => {
   return (
@@ -38,7 +31,7 @@ const Allroutes = () => {
         <Route path="/pricing" element={<Finalprice />}></Route>
         <Route path="/integration" element={<Finalinte />}></Route>
 
-        <Route path="/signin" element={<Signin />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/bookdemo" element={<Bookdemo />}></Route>
         <Route
           path="/blog"

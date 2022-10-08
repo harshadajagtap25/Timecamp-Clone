@@ -1,11 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../../Styles/Sign/Sign.css";
+import "../../Styles/Login/Login.css";
+
 const SignNav = () => {
-  const navigate=useNavigate()
-  const hanldeclick=()=>{
-    navigate("/")
-  }
+  const navigate = useNavigate();
+  const hanldeclick = () => {
+    navigate("/");
+  };
   return (
     <div className="container">
       <div className="logo">

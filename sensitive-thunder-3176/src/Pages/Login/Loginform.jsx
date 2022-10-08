@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/Sign/Sign.css";
+import "../../Styles/Login/Login.css";
 import {
   Button,
   Center,
@@ -8,14 +8,14 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import Signtext from "./Signtext";
+import Logintext from "./Logintext";
 import { Getlogin } from "../../Redux/AuthReducer/Action";
 import { useDispatch, useSelector } from "react-redux";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Siginform = () => {
+const Loginform = () => {
   const [authdata, setAuthdata] = React.useState({ email: "", password: "" });
-const navigate=useNavigate()
+  const navigate = useNavigate();
   const data = useSelector((store) => store.AuthReducer);
 
   const dispatch = useDispatch();
@@ -33,19 +33,18 @@ const navigate=useNavigate()
     } else {
       alert("Invalid Feild");
     }
- 
   };
-React.useEffect(()=>{
-console.log(data.isAuth);
-if(data.isAuth){
-  console.log("homepage")
-  navigate("/timesheet/timesheet")
- }
-},[data.isAuth])
+  React.useEffect(() => {
+    console.log(data.isAuth);
+    if (data.isAuth) {
+      console.log("homepage");
+      navigate("/timesheet/timesheet");
+    }
+  }, [data.isAuth]);
   return (
     <div className="container_form">
       <div className="text">
-        <Signtext />
+        <Logintext />
       </div>
 
       <div className="form">
@@ -71,7 +70,7 @@ if(data.isAuth){
         <div className="heading">
           <FormControl isRequired>
             <Input
-              placeholder="Enter Email"
+              placeholder="Email"
               type={"email"}
               name="email"
               onChange={handlechange}
@@ -82,7 +81,7 @@ if(data.isAuth){
         <div className="heading">
           <FormControl isRequired>
             <Input
-              placeholder="Enter Password"
+              placeholder="Password"
               type={"password"}
               name="password"
               onChange={handlechange}
@@ -100,12 +99,13 @@ if(data.isAuth){
             backgroundColor={"#25cf60"}
             size="md"
             height="48px"
-            width="150px"
+            width="120px"
             color="white"
             onClick={handlesubmit}
             variant={"solid"}
+            borderRadius={50}
           >
-            Login
+            Log In
           </Button>
         </div>
 
@@ -113,7 +113,7 @@ if(data.isAuth){
           <div className="footer">
             {" "}
             <Text color={"#25cf60"} className="smtext">
-              No Accoutn? Sign Up{" "}
+              No account? Sign Up{" "}
             </Text>
           </div>
           <div className="footer">
@@ -128,4 +128,4 @@ if(data.isAuth){
   );
 };
 
-export default Siginform;
+export default Loginform;
