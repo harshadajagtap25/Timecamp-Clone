@@ -21,6 +21,7 @@ import FinalFeature from "./Feature/FinalFeature";
 import Finalprice from "./Pricing/Finalprice";
 import AuthReq from "./Login/AuthReq";
 import Logout from "./Login/Logout";
+import Signin from "./SignIn/Signin";
 
 const Allroutes = () => {
   return (
@@ -30,7 +31,7 @@ const Allroutes = () => {
         <Route path="/feature" element={<FinalFeature />}></Route>
         <Route path="/pricing" element={<Finalprice />}></Route>
         <Route path="/integration" element={<Finalinte />}></Route>
-
+        <Route path="/signin" element={<Signin />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/bookdemo" element={<Bookdemo />}></Route>
         <Route
