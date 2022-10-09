@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Button,
@@ -10,8 +10,38 @@ import {
 } from "@chakra-ui/react";
 import LoginNav from "../Login/LoginNav";
 import "../../Styles/Login/Login.css";
+import { signin } from "../../Redux/AuthReducer/Action";
+import { useNavigate } from "react-router-dom";
+import { SIGNIN_SUCCESS } from "../../Redux/AuthReducer/Actiontype";
+import { useDispatch } from "react-redux";
 
 const Signin = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleSignUp = () => {
+    localStorage.setItem("name", email);
+    let obj = {
+      name: "aa",
+      email: email,
+      password: password,
+      username: name,
+      mobile: "9876543210",
+      description: "desc",
+    };
+    console.log("obj", obj);
+
+    dispatch(signin(obj)).then((r) => {
+      if (r === SIGNIN_SUCCESS) {
+        navigate("/login");
+      }
+    });
+    
+  };
+
   return (
     <Box justifyContent={"center"} m={"auto"}>
       <LoginNav />
@@ -23,7 +53,6 @@ const Signin = () => {
         m={"auto"}
         mt={"80px"}
         borderRadius={30}
-        // shadow={"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px","rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}
         boxShadow={"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px"}
       >
         <Box mt={"20px"} textAlign={"center"}>
@@ -69,17 +98,36 @@ const Signin = () => {
 
         <Box w={"70%"} justifyContent={"center"} m={"auto"}>
           <Box mb={4}>
-            <Input placeholder="Email" size="sm" borderRadius={7} h={10} />
-          </Box>
-          <Box mb={4}>
-            <Input placeholder="Password" size="sm" borderRadius={7} h={10} />
-          </Box>
-          <Box mb={4}>
             <Input
-              placeholder="Phone (optional)"
+              placeholder="Email"
               size="sm"
               borderRadius={7}
               h={10}
+              value={email}
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Box>
+          <Box mb={4}>
+            <Input
+              placeholder="Password"
+              size="sm"
+              borderRadius={7}
+              h={10}
+              value={password}
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </Box>
+          <Box mb={4}>
+            <Input
+              placeholder="Username"
+              size="sm"
+              borderRadius={7}
+              h={10}
+              value={name}
+              type="text"
+              onChange={(e) => setName(e.target.value)}
             />
           </Box>
 
@@ -92,6 +140,7 @@ const Signin = () => {
               color={"white"}
               h={"50px"}
               fontSize={14}
+              onClick={handleSignUp}
             >
               Sign up for free
             </Button>

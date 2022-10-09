@@ -3,7 +3,7 @@ import axios from "axios";
 
 const signin = (payload) => (dispatch) => {
   dispatch({ type: types.SIGNIN_REQUEST });
-  console.log(payload);
+
   return axios
     .post(`https://masai-api-mocker.herokuapp.com/auth/register`, payload)
     .then((r) => {
@@ -17,16 +17,19 @@ const signin = (payload) => (dispatch) => {
     });
 };
 
-const Getlogin = (params) => (dispatch) => {
+const Getlogin = (payload) => (dispatch) => {
   dispatch({ type: types.GET_Login_REQUEST });
 
   return axios
-    .post("https://reqres.in/api/login", params)
+    .post("https://masai-api-mocker.herokuapp.com/auth/login", payload)
     .then((r) => {
       dispatch({ type: types.GET_Login_SUCCESS, payload: r.data.token });
+      console.log(r.data)
+      return types.GET_Login_SUCCESS
     })
     .catch((err) => {
       dispatch({ type: types.GET_Login_FAILURE });
+      return  types.GET_Login_FAILURE
     });
 };
 
