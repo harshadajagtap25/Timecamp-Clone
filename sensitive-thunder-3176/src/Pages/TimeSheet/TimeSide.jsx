@@ -38,6 +38,8 @@ import {
   FaClipboard,
   FaClock,
 } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { Getlogout } from "../../Redux/AuthReducer/Action";
 
 const LinkItems = [
   { name: "Timesheet", icon: FaClock, path: "timesheet" },
@@ -55,6 +57,8 @@ const LinkItems = [
 
 export default function TimeSide({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+ 
+
   return (
     <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>
       <SidebarContent
@@ -147,14 +151,19 @@ const NavItem = ({ icon, p, children, ...rest }) => {
           as={icon}
         />
       )}
-      <Link to={`/timesheet/${p}`} >
-        {children}
-      </Link>
+      <Link to={`/timesheet/${p}`}>{children}</Link>
     </Flex>
   );
 };
 
 const MobileNav = ({ onOpen, name, ...rest }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate("/");
+    dispatch(Getlogout());
+  };
   return (
     <Flex
       ml={{ base: 0, md: 60 }}
@@ -228,7 +237,7 @@ const MobileNav = ({ onOpen, name, ...rest }) => {
               <MenuItem>Download App </MenuItem>
               <MenuItem>Browser Plugins</MenuItem>
               <MenuDivider />
-              <MenuItem>Log out</MenuItem>
+              <MenuItem onClick={()=>handleLogout()}>Log out</MenuItem>
             </MenuList>
           </Menu>
         </Flex>

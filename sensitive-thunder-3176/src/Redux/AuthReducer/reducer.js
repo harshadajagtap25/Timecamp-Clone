@@ -55,13 +55,11 @@ export const reducer = (state = intial, action) => {
         token: "",
       };
 
-    case types.GET_Loginout_REQUEST:
-      return { ...state, isLoading: true };
+    
     case types.GET_Loginout_SUCCESS:
       setdata("token", "");
       return { ...state, isLoading: false, isAuth: false, token: "" };
-    case types.GET_Loginout_FAILURE:
-      return { ...state, isError: true };
+    
     default:
       return state;
   }

@@ -37,6 +37,7 @@ const Getlogout = () => (dispatch) => {
   dispatch({ type: types.GET_Loginout_REQUEST });
 
   return dispatch({ type: types.GET_Loginout_SUCCESS, payload: undefined });
+  // return dispatch({ type: LOGOUT_SUCCESS });
 };
 
 export { signin, Getlogout, Getlogin };
