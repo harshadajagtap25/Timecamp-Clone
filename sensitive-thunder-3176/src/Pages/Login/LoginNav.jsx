@@ -9,14 +9,18 @@ const SignNav = () => {
   };
   return (
     <div className="container">
-      <div className="logo">
-        <img
-          src="https://app.timecamp.com//res/css/images/greenbranding/TC-logo.svg"
-          alt=""
-          onClick={hanldeclick}
-        />
+      <div className="cont2">
+        <div className="logo">
+          <img
+            src="https://app.timecamp.com//res/css/images/greenbranding/TC-logo.svg"
+            alt=""
+            onClick={hanldeclick}
+          />
+        </div>
+        <div className="loginNav" onClick={() => navigate("/login")}>
+          Log In
+        </div>
       </div>
-      <div></div>
     </div>
   );
 };

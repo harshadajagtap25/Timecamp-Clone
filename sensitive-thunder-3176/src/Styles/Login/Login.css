@@ -7,19 +7,34 @@
   top: 0;
   box-shadow: -1px 4px 10px 0 rgb(0 0 0 / 10%);
   display: flex;
+  display: flex;
+  justify-content: space-around;
+}
+.cont2 {
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 .logo {
   height: 80px;
-  width: 60%;
+  width: 40%;
   margin: auto;
-  justify-content: left;
   display: flex;
   align-items: center;
+  margin-left: -50px;
 }
 .logo img {
   width: 150px;
   height: 150px;
   margin-top: 10px;
+}
+
+.loginNav {
+  margin-top: 25px;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* form */
@@ -92,7 +107,7 @@
 }
 .googlelog {
   width: 65%;
-
+  cursor: pointer;
   margin: auto;
   height: 50px;
   /* border: 1px solid red; */
