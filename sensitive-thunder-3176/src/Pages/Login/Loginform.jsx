@@ -1,37 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../Styles/Login/Login.css";
-import {
-  Button,
-  Center,
-  FormControl,
-  Heading,
-  Input,
-  Text,
-} from "@chakra-ui/react";
+import { Button, FormControl, Heading, Input, Text } from "@chakra-ui/react";
 import Logintext from "./Logintext";
 import { Getlogin } from "../../Redux/AuthReducer/Action";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { GET_Login_SUCCESS } from "../../Redux/AuthReducer/Actiontype";
 
 const Loginform = () => {
   const [authdata, setAuthdata] = React.useState({ email: "", password: "" });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const data = useSelector((store) => store.AuthReducer);
 
+  const data = useSelector((store) => store.AuthReducer);
   const dispatch = useDispatch();
+
   const googleclick = () => {};
 
-  const handlechange = (e) => {
-    const { name, value } = e.target;
-
-    setAuthdata({ ...authdata, [name]: value });
-  };
-
   const handlesubmit = () => {
-    if (authdata.email && authdata.password) {
-      dispatch(Getlogin(authdata));
-    } else {
-      alert("Invalid Feild");
+    if (email && password) {
+      localStorage.setItem("email", email);
+      var obj1 = {
+        email,
+        password,
+
+      };
+      console.log(obj1);
+      dispatch(Getlogin(obj1)).then((r) => {
+        if (r === GET_Login_SUCCESS) 
+        navigate("/timesheet/timesheet");
+      });
     }
   };
   React.useEffect(() => {
@@ -73,8 +72,8 @@ const Loginform = () => {
               placeholder="Email"
               type={"email"}
               name="email"
-              onChange={handlechange}
-              value={authdata.email}
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </FormControl>
         </div>
@@ -84,8 +83,8 @@ const Loginform = () => {
               placeholder="Password"
               type={"password"}
               name="password"
-              onChange={handlechange}
-              value={authdata.password}
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
             />
           </FormControl>
         </div>

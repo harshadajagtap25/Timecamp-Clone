@@ -18,19 +18,14 @@ import { useDispatch } from "react-redux";
 const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleSignUp = () => {
     localStorage.setItem("name", email);
     let obj = {
-      name: "aa",
       email: email,
       password: password,
-      username: name,
-      mobile: "9876543210",
-      description: "desc",
     };
     console.log("obj", obj);
 
@@ -39,7 +34,6 @@ const Signin = () => {
         navigate("/login");
       }
     });
-    
   };
 
   return (
@@ -121,13 +115,11 @@ const Signin = () => {
           </Box>
           <Box mb={4}>
             <Input
-              placeholder="Username"
+              placeholder="Phone (Optional)"
               size="sm"
               borderRadius={7}
               h={10}
-              value={name}
-              type="text"
-              onChange={(e) => setName(e.target.value)}
+              
             />
           </Box>
 
