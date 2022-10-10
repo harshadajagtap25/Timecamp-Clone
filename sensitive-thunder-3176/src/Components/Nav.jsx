@@ -4,10 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 import "../Styles/Navbar/Nav.css";
 import { Button } from "@chakra-ui/react";
 
-import {useSelector} from "react-redux"
+import { useSelector } from "react-redux";
 const Nav = () => {
-const data=useSelector(store=>store.AuthReducer.isAuth)
-const navigate=useNavigate()
+  const data = useSelector((store) => store.AuthReducer.isAuth);
+  const navigate = useNavigate();
 
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -36,10 +36,11 @@ const navigate=useNavigate()
   const closeMenu = () => {
     setClick(false);
   };
-React.useEffect(()=>{
-
-},)
-  const navigatortoothersite = () => {navigate("/Signin")};
+  React.useEffect(() => {});
+  const navigatortoothersite = () => {
+    if (!data) navigate("/signin");
+    else navigate("/timesheet/timesheet");
+  };
   return (
     <div className="header" id={scrollclass ? "headercon" : ""}>
       <nav className="navbar">
@@ -78,12 +79,15 @@ React.useEffect(()=>{
             </Link>
           </li>
           <li className="nav-item" id="signin">
-            {!data?  <Link to="/signin" onClick={onclose}>
-              Sign in
-            </Link>:<Link to="/Logout" onClick={onclose}>
-          Log out
-            </Link>}
-          
+            {!data ? (
+              <Link to="/signin" onClick={onclose}>
+                Sign in
+              </Link>
+            ) : (
+              <Link to="/Logout" onClick={onclose}>
+                Log out
+              </Link>
+            )}
           </li>
         </ul>
         <div className="buttn_navbar">

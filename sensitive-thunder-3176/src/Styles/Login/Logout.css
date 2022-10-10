@@ -1,89 +1,69 @@
-.container_logout{
-
-     
-    width: 40%;
-    height: auto;
-    margin: auto;
-    margin-top: 50px;
-
-
+.container_logout {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
 }
-.logout_div{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 70%;
-    height: auto;
-    margin: auto;
-    margin-top: 50px;
-
+.logout_div {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
 }
 
-.image_logout{
- 
-    width: 40%;
+.image_logout {
+  width: 40%;
+  height: 100px;
+  margin: auto;
+}
+.image_logout img {
+  width: 150px;
+  height: 150px;
+}
+
+.chakra_button_logout {
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.chakra_button button {
+  color: white;
+}
+
+@media screen and (max-width: 440px) {
+  .container_logout {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .chakra_button {
+    width: 100%;
     height: 100px;
     margin: auto;
-
-}
-.image_logout img{
-    width: 150px;
-    height: 150px;
-}
-
-
-
-
-
-
-
-.chakra_button_logout{
-    width: 50%;
-    height: 100px;
-    margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
-
-}
-
-.chakra_button button  {
- color: white;
-}
-
-
-@media screen and (max-width:440px)
-{
-    .container_logout{
-
-     
-        width: 80%;
-        height: 400px;
-        margin: auto;
-        margin-top: 50px;
-
-    
-    }
-
-
-    .chakra_button{
-        width: 100%;
-        height: 100px;
-        margin: auto;
-        margin-top: 30px;
-        text-align: center;
-    }
-    .logout_div{
-        width: 90%;
-        height: 100px;
-    }
-    .container{
-        width: 90%;
-        height: 100px;
-    }
-    .chakra_button_logout{
-        width: 90%;
-        height: 100px;
-        margin: auto;
-        margin-top: 30px;
-        text-align: center;
-
-    }
+  }
+  .logout_div {
+    width: 90%;
+    height: 100px;
+  }
+  .container {
+    width: 90%;
+    height: 100px;
+  }
+  .chakra_button_logout {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+  }
 }

@@ -1,20 +1,18 @@
-import React from 'react'
+import React from "react";
 
-import Footer from '../../Components/Footer'
-import Navbar from '../../Components/Navbar'
+import Footer from "../../Components/Footer";
+import Navbar from "../../Components/Navbar";
 
-import Home from './Home'
+import Home from "./Home";
 
 const FinalHome = () => {
-
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <Footer/>
-    
+      <Navbar />
+      <Home />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default FinalHome
+export default FinalHome;

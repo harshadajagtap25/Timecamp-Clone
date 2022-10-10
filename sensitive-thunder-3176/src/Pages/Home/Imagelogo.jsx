@@ -1,10 +1,10 @@
-import { Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import React from "react";
 
 const Imagelogo = () => {
   return (
-    <div style={{marginTop:"10px"}}> 
-<Stack bg={"#37c266"} m={0} p={4} spacing={8}>
+    <div style={{ marginTop: "10px" }}>
+      <Stack bg={"#37c266"} m={0} p={4} spacing={8}>
         <Text
           fontWeight={"semibold"}
           fontSize={"lg"}
@@ -27,8 +27,8 @@ const Imagelogo = () => {
           <Image src="https://cdn-m.timecamp.com/img/greenbranding/social-proof-section/havas-logo-white.png" />
         </SimpleGrid>
       </Stack>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Imagelogo
+export default Imagelogo;

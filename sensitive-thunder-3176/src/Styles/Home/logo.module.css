@@ -1,6 +1,6 @@
-.smallscreen_div{
+.smallscreen_div {
   display: none;
-background-color: #0a8c37;
+  background-color: #0a8c37;
 }
 
 @media screen and (max-width: 1200px) {
@@ -156,5 +156,4 @@ background-color: #0a8c37;
   .btn_reveiw .text {
     margin-top: 40px;
   }
- 
 }

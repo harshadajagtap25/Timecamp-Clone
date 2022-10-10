@@ -1,6 +1,6 @@
-import { Box } from '@chakra-ui/layout'
-import React from 'react'
-import TimeSide from './TimeSide'
+import { Box } from "@chakra-ui/layout";
+import React from "react";
+import TimeSide from "./TimeSide";
 
 const Computer = () => {
   return (
@@ -10,7 +10,7 @@ const Computer = () => {
         {/*TODO:  import Your Component here */}
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default Computer
+export default Computer;

@@ -1,18 +1,18 @@
-.footer_container{
-    width: 100%;
-    height: auto;
-
-    text-align: center;
+.footer_container {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
-.footer_container h1{
-    font-family: "lato";
-    font-size: 32px;
-    color: #1b1b20;
-    font-weight: 800;
+.footer_container h1 {
+  font-family: "lato";
+  font-size: 32px;
+  color: #1b1b20;
+  font-weight: 800;
 }
-.footer_inner{
-    width: 90%;
-    height: 90%;
-    margin: auto;
-  
+.footer_inner {
+  width: 90%;
+  height: 90%;
+  margin: auto;
 }

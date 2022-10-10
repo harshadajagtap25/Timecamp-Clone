@@ -136,20 +136,16 @@
   margin-top: 40px;
 }
 
-
-  
-@media screen and (max-width:1200px)  {
+@media screen and (max-width: 1200px) {
   .image_div {
     display: none;
   }
-  .image_container{
-    padding-top: 50px;;
-  }
-}
-@media screen and (max-width:800px)  {
- 
-  .image_container{
+  .image_container {
     padding-top: 50px;
   }
-
+}
+@media screen and (max-width: 800px) {
+  .image_container {
+    padding-top: 50px;
+  }
 }

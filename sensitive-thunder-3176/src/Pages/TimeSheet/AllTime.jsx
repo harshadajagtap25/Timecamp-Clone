@@ -6,7 +6,7 @@ const AllTime = () => {
   return (
     <div>
       <TimeSide />
-      <TimeSheet/>
+      <TimeSheet />
     </div>
   );
 };

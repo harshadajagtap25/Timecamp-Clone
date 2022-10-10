@@ -1,58 +1,47 @@
-.logo_container{
-
-    width: 100%;
-    height: 200px;
-  
-
-
+.logo_container {
+  width: 100%;
+  height: 200px;
 }
-.logo_div{
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-
+.logo_div {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
-.image_div{
-width: 18%;
-height: 90%;
-margin-top: 50px;
+.image_div {
+  width: 18%;
+  height: 90%;
+  margin-top: 50px;
 }
-.image_div img{
-    width: 100px;
-    height: 100px;
+.image_div img {
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 900px) {
-    .logo_container{
+  .logo_container {
+    width: 100%;
+    height: 300px;
+  }
+  .logo_div {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
 
-        width: 100%;
-        height: 300px;
-      
-    
-    
-    }
-    .logo_div{
-        width: 90%;
-        height: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-    
-    }
-
-    .image_div{
-        width: 60%;
-        height: 80%;
-        margin: auto;
-        margin-top: 30px;
-      
-        }
-        .image_div img{
-            width: 120px;
-            height: 80px;
-        }
+  .image_div {
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .image_div img {
+    width: 120px;
+    height: 80px;
+  }
 }

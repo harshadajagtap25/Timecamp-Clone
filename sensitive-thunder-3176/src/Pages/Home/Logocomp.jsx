@@ -14,7 +14,7 @@ const Logocomp = () => {
           <img
             src="https://cdn-m.timecamp.com/img/greenbranding/features/capterra.png"
             alt=""
-            style={{width:"100px" ,heigth:"100px"}}
+            style={{ width: "100px", heigth: "100px" }}
           />
         </div>
         <div className="image_div">

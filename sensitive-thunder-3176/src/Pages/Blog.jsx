@@ -1,16 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Blog = () => {
-  React.useEffect(()=>{
+  React.useEffect(() => {});
+  return <div>Blog page</div>;
+};
 
-  })
-  return (
-    <div>
-
-Blog page
-
-    </div>
-  )
-}
-
-export default Blog
+export default Blog;

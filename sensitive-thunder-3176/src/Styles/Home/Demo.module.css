@@ -1,7 +1,6 @@
 .demo_container {
   width: 100%;
   height: 300px;
-
 }
 .container_inner {
   width: 70%;
@@ -34,12 +33,10 @@
 }
 
 .container_heading {
-
   width: 80%;
   height: 50%;
   margin: auto;
-text-align: center;
-
+  text-align: center;
 }
 .textheading {
   line-height: 40px;
@@ -48,14 +45,12 @@ text-align: center;
   line-height: 40px;
   color: #1b1b20;
   font-family: "lotu";
-
 }
 
 @media screen and (max-width: 1200px) {
   .demo_container {
     width: 100%;
     height: auto;
-
   }
 
   .tracktext {
@@ -76,7 +71,7 @@ text-align: center;
     display: flex;
     width: 98%;
     height: 20%;
-  
+
     margin: auto;
     margin-top: 70px;
   }
@@ -94,19 +89,18 @@ text-align: center;
   .demo_container {
     width: 100%;
     height: auto;
-
   }
   .container_inner {
     width: 95%;
     height: 100%;
- 
+
     margin: auto;
   }
   .inner1_div {
     display: flex;
     width: 98%;
     height: 20%;
- 
+
     margin: auto;
     margin-top: 70px;
   }
@@ -124,6 +118,6 @@ text-align: center;
     font-family: "nunito sans", sans-serif;
     color: #1b1b20;
     font-weight: 700;
- display: flex;
+    display: flex;
   }
 }

@@ -4,10 +4,10 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { GrAdd } from "react-icons/gr";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteTags, getTags } from "../../Redux/AppReducer/action";
+
 const TagCard = ({ tagName, key, id }) => {
   const dispatch = useDispatch();
   const tags = useSelector((state) => state.AppReducer.tags);
-
 
   const handleTagDelete = (id) => {
     dispatch(deleteTags(id)).then((r) => dispatch(getTags()));

@@ -63,20 +63,11 @@ ul {
   list-style: none;
 }
 
-
 @media screen and (max-width: 1100px) {
-  .buttn_navbar{
+  .buttn_navbar {
     display: none;
   }
-
 }
-
-
-
-
-
-
-
 
 @media screen and (max-width: 940px) {
   .header {
@@ -115,7 +106,7 @@ ul {
   .nav-item {
     margin: 1rem 0;
   }
- 
+
   .header .navbar img {
     width: 150px;
   }
@@ -126,7 +117,7 @@ ul {
   .fa_timescss {
     color: black;
   }
-  .buttn_navbar{
+  .buttn_navbar {
     display: none;
   }
 }
@@ -135,7 +126,7 @@ ul {
     width: 100px;
     height: 100px;
   }
-  .buttn_navbar{
+  .buttn_navbar {
     display: none;
   }
 

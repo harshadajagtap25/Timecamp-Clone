@@ -6,7 +6,6 @@ const getLocalData = (key) => {
 };
 
 const setdata = (key, value) => {
- 
   if (key) {
     let data = localStorage.setItem(key, value);
   }

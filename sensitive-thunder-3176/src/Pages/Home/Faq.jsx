@@ -1,4 +1,3 @@
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import {
   Accordion,
   AccordionButton,

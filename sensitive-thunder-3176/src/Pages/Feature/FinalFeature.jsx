@@ -1,19 +1,17 @@
-import React from 'react'
-import Footer from '../../Components/Footer'
-import Navbar from '../../Components/Navbar'
+import React from "react";
+import Footer from "../../Components/Footer";
+import Navbar from "../../Components/Navbar";
 
-
-import Feature from './Feature'
+import Feature from "./Feature";
 
 const FinalFeature = () => {
   return (
     <>
-    <Navbar/>
-    <Feature/>
-    <Footer/>
-
+      <Navbar />
+      <Feature />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default FinalFeature
+export default FinalFeature;

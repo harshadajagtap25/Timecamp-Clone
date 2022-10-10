@@ -26,7 +26,7 @@ const Loginform = () => {
         password,
 
       };
-      console.log(obj1);
+      // console.log(obj1);
       dispatch(Getlogin(obj1)).then((r) => {
         if (r === GET_Login_SUCCESS) 
         navigate("/timesheet/timesheet");
@@ -34,9 +34,9 @@ const Loginform = () => {
     }
   };
   React.useEffect(() => {
-    console.log(data.isAuth);
+    // console.log(data.isAuth);
     if (data.isAuth) {
-      console.log("homepage");
+      // console.log("homepage");
       navigate("/timesheet/timesheet");
     }
   }, [data.isAuth]);

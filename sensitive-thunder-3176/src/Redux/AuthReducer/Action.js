@@ -8,7 +8,7 @@ const signin = (payload) => (dispatch) => {
     .post(`https://reqres.in/api/register`, payload)
     .then((r) => {
       dispatch({ type: types.SIGNIN_SUCCESS, payload: r.data });
-      console.log("Reg Success");
+      // console.log("Reg Success");
       return types.SIGNIN_SUCCESS;
     })
     .catch((e) => {
@@ -24,12 +24,12 @@ const Getlogin = (payload) => (dispatch) => {
     .post("https://reqres.in/api/login", payload)
     .then((r) => {
       dispatch({ type: types.GET_Login_SUCCESS, payload: r.data.token });
-      console.log(r.data)
-      return types.GET_Login_SUCCESS
+      // console.log(r.data)
+      return types.GET_Login_SUCCESS;
     })
     .catch((err) => {
       dispatch({ type: types.GET_Login_FAILURE });
-      return  types.GET_Login_FAILURE
+      return types.GET_Login_FAILURE;
     });
 };
 

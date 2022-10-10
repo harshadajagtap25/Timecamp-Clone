@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import {
   IconButton,
   Avatar,
@@ -6,7 +6,6 @@ import {
   CloseButton,
   Flex,
   HStack,
-  VStack,
   Icon,
   useColorModeValue,
   Drawer,
@@ -20,8 +19,8 @@ import {
   MenuList,
   Image,
 } from "@chakra-ui/react";
-import { FiSettings, FiMenu, FiBell, FiChevronDown } from "react-icons/fi";
-import { QuestionOutlineIcon, SettingsIcon, TimeIcon } from "@chakra-ui/icons";
+import { FiMenu, FiChevronDown } from "react-icons/fi";
+import {  SettingsIcon } from "@chakra-ui/icons";
 import { Link, useNavigate } from "react-router-dom";
 import {
   FaTachometerAlt,
@@ -57,7 +56,6 @@ const LinkItems = [
 
 export default function TimeSide({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
- 
 
   return (
     <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>
@@ -237,7 +235,7 @@ const MobileNav = ({ onOpen, name, ...rest }) => {
               <MenuItem>Download App </MenuItem>
               <MenuItem>Browser Plugins</MenuItem>
               <MenuDivider />
-              <MenuItem onClick={()=>handleLogout()}>Log out</MenuItem>
+              <MenuItem onClick={() => handleLogout()}>Log out</MenuItem>
             </MenuList>
           </Menu>
         </Flex>

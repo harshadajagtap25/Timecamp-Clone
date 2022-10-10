@@ -22,11 +22,13 @@ const Minicard = () => {
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Stack spacing={"2"} w={"90%"}>
-            <Text as={"span"} color={"#25cf60"} fontSize={"sm"}
-            fontFamily={"nunito sans, sans-serif"}
-            
+            <Text
+              as={"span"}
+              color={"#25cf60"}
+              fontSize={"sm"}
+              fontFamily={"nunito sans, sans-serif"}
             >
-            FOR EMPLOYEES
+              FOR EMPLOYEES
             </Text>
 
             <Heading
@@ -42,10 +44,11 @@ const Minicard = () => {
             </Heading>
 
             <Text color={"#1b1b20"}>
-            Log working hours of your employees automatically or manually and make sure they are billed fairly.
+              Log working hours of your employees automatically or manually and
+              make sure they are billed fairly.
             </Text>
           </Stack>
-<Faq/>
+          <Faq />
           <Stack spacing={{ base: -8, sm: -10 }} direction={{ sm: "row" }}>
             <Button
               rounded={"full"}
@@ -57,7 +60,7 @@ const Minicard = () => {
               bg={"#25cf60"}
               _hover={"#25cf60"}
             >
-              Track employees  time
+              Track employees time
             </Button>
           </Stack>
         </Stack>

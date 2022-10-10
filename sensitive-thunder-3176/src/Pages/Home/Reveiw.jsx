@@ -12,12 +12,17 @@ const Review = () => {
       margin={"auto"}
     >
       <Text mt={"60px"} mb={"100px"} fontSize="40px" fontWeight="700">
-      Reviews
+        Reviews
       </Text>
 
-
-      <Text mt={"60px"} mb={"100px"} fontSize="40px" fontWeight="700" justifyItems="center">
-      Time tracking software for businesses across all industries and sizes
+      <Text
+        mt={"60px"}
+        mb={"100px"}
+        fontSize="40px"
+        fontWeight="700"
+        justifyItems="center"
+      >
+        Time tracking software for businesses across all industries and sizes
       </Text>
       <HStack w={"52%"} gap={"60px"}>
         <Box
@@ -50,7 +55,6 @@ const Review = () => {
           >
             Felipe
           </Text>
-      
         </Box>
         <Box
           boxShadow="20px 20px 40px 0 rgb(0 0 0 / 10%)"

@@ -1,31 +1,28 @@
-.user{
-    margin-left: 10px;
-    font-size: 35px;
-    color: #88a9f9;
-  
+.user {
+  margin-left: 10px;
+  font-size: 35px;
+  color: #88a9f9;
 }
-.userBox{
+.userBox {
   border: 1px solid black;
   border-radius: 10px;
   width: 95%;
   margin-top: 50px;
   height: auto;
 }
-.accountbtn{
-   font-size: 20px;
-   
+.accountbtn {
+  font-size: 20px;
 }
-.bgchange{
+.bgchange {
   opacity: 0;
 }
-.bgchange:hover{
+.bgchange:hover {
   opacity: 1;
 }
-.back:hover{
+.back:hover {
   background-color: rgb(221, 221, 221);
 }
-.guest{
-  width: 500px ;
+.guest {
+  width: 500px;
   height: auto;
-  
 }

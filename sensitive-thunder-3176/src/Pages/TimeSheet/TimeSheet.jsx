@@ -72,7 +72,7 @@ const TimeSheet = () => {
         note: note,
         curDate: curDate,
       };
-      
+
       dispatch(addTask(payload)).then((r) => dispatch(getTasks(r)));
     }
   };

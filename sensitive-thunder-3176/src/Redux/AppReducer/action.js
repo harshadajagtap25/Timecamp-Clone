@@ -86,7 +86,7 @@ const deleteTask = (id) => (dispatch) => {
     );
 };
 const deleteTags = (id) => (dispatch) => {
-  console.log(id);
+  // console.log(id);
   dispatch({ type: types.DELETE_TASK_REQUEST });
   return axios
     .delete(`http://localhost:8080/tags/${id}`)

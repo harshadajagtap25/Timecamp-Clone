@@ -14,8 +14,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { AiOutlineGoogle,AiOutlineArrowRight } from "react-icons/ai";
-
+import { AiOutlineGoogle, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Feature() {
   const [one, setOne] = useState(true);
@@ -892,7 +891,7 @@ export default function Feature() {
           </Text>
         </Text>
       </Center>
-      <Container maxWidth={'9xl'} bgColor={"gray.100"} px={[4,8,16,32,64]}>
+      <Container maxWidth={"9xl"} bgColor={"gray.100"} px={[4, 8, 16, 32, 64]}>
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}
@@ -908,7 +907,6 @@ export default function Feature() {
                 lineHeight={1}
                 fontWeight={500}
                 fontSize={{ base: "3xl", sm: "4xl" }}
-                
               >
                 <Text as={"span"} fontSize={"2xl"}>
                   Easy and quick integration with more than 100 apps and work
@@ -921,9 +919,37 @@ export default function Feature() {
                 your go-to apps such as Trello or Asana thanks to our Chrome
                 extension.
               </Text>
-              <Button h={16} rounded={20} as={'a'}bgColor={'#3c91e6'} color='white' _hover={'none'}><Image w={8} src="https://cdn-m.timecamp.com/img/integrations/chrome.png" m={2}/>Track time in chrome</Button>
-              <Button h={16} rounded={20} as={'a'} bgColor={'#3c91e6'} color='white' _hover={'none'}> <Image  w={16} src="https://cdn-m.timecamp.com/img/integrations/edge.svg"/>Track time in edge</Button>
-              
+              <Button
+                h={16}
+                rounded={20}
+                as={"a"}
+                bgColor={"#3c91e6"}
+                color="white"
+                _hover={"none"}
+              >
+                <Image
+                  w={8}
+                  src="https://cdn-m.timecamp.com/img/integrations/chrome.png"
+                  m={2}
+                />
+                Track time in chrome
+              </Button>
+              <Button
+                h={16}
+                rounded={20}
+                as={"a"}
+                bgColor={"#3c91e6"}
+                color="white"
+                _hover={"none"}
+              >
+                {" "}
+                <Image
+                  w={16}
+                  src="https://cdn-m.timecamp.com/img/integrations/edge.svg"
+                />
+                Track time in edge
+              </Button>
+
               <Text color={"gray.500"}>
                 Maintain your current workflow and connect TimeCamp, the best
                 time tracking software, with your currently used apps.
@@ -940,7 +966,7 @@ export default function Feature() {
                 variant={"ghost"}
                 color={"green"}
               >
-                Check Integrations <AiOutlineArrowRight/>
+                Check Integrations <AiOutlineArrowRight />
               </Button>
             </Stack>
           </Stack>
@@ -949,7 +975,7 @@ export default function Feature() {
             p={10}
             justifyContent={"center"}
             columns={[2, 3, 3]}
-            spacing={[10,20]}
+            spacing={[10, 20]}
           >
             <Box
               bgColor={"white"}
@@ -1158,51 +1184,61 @@ export default function Feature() {
           </SimpleGrid>
         </Stack>
       </Container>
-      <Box bgColor={"gray.100"} my={10}  px={[4,8,16,32,64]}>
-      <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={'center'}>
-          <Heading>You might be interested in these blog posts</Heading>
-          
-        </Stack>
-        <Stack
-          direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}>
-            <Flex gap={8}  direction={{ base: 'column', md: 'row' }}>
-
-         <Stack w={'60%'}>
-          <Image w={'300px'} src='https://cdn-m.timecamp.com/img/customer-stories/saatchi/saatchi.jpg'/>
-          <Text color={'blue.400'}>M&C SAATCHI</Text>
-          <Text fontWeight={'semibold'}>
-How to Blend in TimeCamp to an Already Established Workflow. Some
-Insights From M&C Saatchi</Text>
-         </Stack>
-         <Stack w={'60%'}>
-          <Image w={'300px'} src='https://cdn-m.timecamp.com/img/customer-stories/tense/tensegroup.jpg'/>
-          <Text color={'blue.400'}>Grupa TENSE</Text>
-          <Text fontWeight={'semibold'}>
-
-          How TimeCamp helped a thriving digital agency by automating its
-workflow.</Text>
-         </Stack>
-         <Stack w={'60%'}>
-          <Image w={'300px'} src='https://cdn-m.timecamp.com/img/greenbranding/features/timeTracking.png'/>
-          <Text color={'blue.400'}>Time tracking</Text>
-          <Text fontWeight={'semibold'}>
-          Why You Should Use Time Tracking for Your Business</Text>
-         </Stack>
+      <Box bgColor={"gray.100"} my={10} px={[4, 8, 16, 32, 64]}>
+        <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+          <Stack spacing={0} align={"center"}>
+            <Heading>You might be interested in these blog posts</Heading>
+          </Stack>
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            spacing={{ base: 10, md: 4, lg: 10 }}
+          >
+            <Flex gap={8} direction={{ base: "column", md: "row" }}>
+              <Stack w={"60%"}>
+                <Image
+                  w={"300px"}
+                  src="https://cdn-m.timecamp.com/img/customer-stories/saatchi/saatchi.jpg"
+                />
+                <Text color={"blue.400"}>M&C SAATCHI</Text>
+                <Text fontWeight={"semibold"}>
+                  How to Blend in TimeCamp to an Already Established Workflow.
+                  Some Insights From M&C Saatchi
+                </Text>
+              </Stack>
+              <Stack w={"60%"}>
+                <Image
+                  w={"300px"}
+                  src="https://cdn-m.timecamp.com/img/customer-stories/tense/tensegroup.jpg"
+                />
+                <Text color={"blue.400"}>Grupa TENSE</Text>
+                <Text fontWeight={"semibold"}>
+                  How TimeCamp helped a thriving digital agency by automating
+                  its workflow.
+                </Text>
+              </Stack>
+              <Stack w={"60%"}>
+                <Image
+                  w={"300px"}
+                  src="https://cdn-m.timecamp.com/img/greenbranding/features/timeTracking.png"
+                />
+                <Text color={"blue.400"}>Time tracking</Text>
+                <Text fontWeight={"semibold"}>
+                  Why You Should Use Time Tracking for Your Business
+                </Text>
+              </Stack>
             </Flex>
-        </Stack>
-      </Container>
-    </Box>
-    <Container maxW={"7xl"} my={8} p={[4,8,16]}>
+          </Stack>
+        </Container>
+      </Box>
+      <Container maxW={"7xl"} my={8} p={[4, 8, 16]}>
         <Image
           src="https://cdn-m.timecamp.com/img/greenbranding/greenSmallSkewCircle.svg"
-          mx={[0,20, 40, 60, 80]}
+          mx={[0, 20, 40, 60, 80]}
           mb={-8}
         />
         <Image
           src="https://cdn-m.timecamp.com/img/greenbranding/redSmallCircle.svg"
-          mx={[100,200, 400, 600, 800]}
+          mx={[100, 200, 400, 600, 800]}
           mb={-2}
         />
         <Stack
@@ -1213,45 +1249,49 @@ workflow.</Text>
           p={10}
           rounded={16}
         >
-
-            <Stack spacing={4} textAlign={"center"} px={[2,4,8,16,32]}>
-              <Heading fontWeight={[400,600,700]} fontSize={['2xl','4xl']}>
+          <Stack spacing={4} textAlign={"center"} px={[2, 4, 8, 16, 32]}>
+            <Heading fontWeight={[400, 600, 700]} fontSize={["2xl", "4xl"]}>
               One simple tool to measure everything your business needs.
-              </Heading>
-              <Text color={"gray.500"} fontSize={["sm", "md", "lg"]} >
-              Remember, you can't improve something if you're not measuring it! If you're tired of the constant guessing, give TimeCamp a go!
-              </Text>
-            </Stack>
-            <Flex justifyContent={"center"} direction={["column","row","row"]} my={2} gap={4}>
-              <Button
-                color={"black"}
-                bg={"#F7B801"}
-                rounded={"full"}
-                px={6}
-                height={[8, 12]}
-                w={[40, 80, 160, 200,400]}
-                fontSize={[10, 16]}
-                fontWeight={"semibold"}
-                _hover={"#ffbf00"}
-              >
-                Try Timecamp for free
-              </Button>
-              <Button
-                color={"black"}
-                borderColor={"#F7B801"}
-                rounded={"full"}
-                variant={'outline'}
-                px={6}
-                height={[8, 12]}
-                w={[40, 80, 160, 200,400]}
-                fontSize={[10, 16]}
-                fontWeight={"semibold"}
-                _hover={"#ffbf00"}
-              >
-                Contact Sales
-              </Button>
-            </Flex>
-        
+            </Heading>
+            <Text color={"gray.500"} fontSize={["sm", "md", "lg"]}>
+              Remember, you can't improve something if you're not measuring it!
+              If you're tired of the constant guessing, give TimeCamp a go!
+            </Text>
+          </Stack>
+          <Flex
+            justifyContent={"center"}
+            direction={["column", "row", "row"]}
+            my={2}
+            gap={4}
+          >
+            <Button
+              color={"black"}
+              bg={"#F7B801"}
+              rounded={"full"}
+              px={6}
+              height={[8, 12]}
+              w={[40, 80, 160, 200, 400]}
+              fontSize={[10, 16]}
+              fontWeight={"semibold"}
+              _hover={"#ffbf00"}
+            >
+              Try Timecamp for free
+            </Button>
+            <Button
+              color={"black"}
+              borderColor={"#F7B801"}
+              rounded={"full"}
+              variant={"outline"}
+              px={6}
+              height={[8, 12]}
+              w={[40, 80, 160, 200, 400]}
+              fontSize={[10, 16]}
+              fontWeight={"semibold"}
+              _hover={"#ffbf00"}
+            >
+              Contact Sales
+            </Button>
+          </Flex>
         </Stack>
         <Image
           src="https://cdn-m.timecamp.com/img/greenbranding/blueSmallCircle.svg"
